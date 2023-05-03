@@ -6,6 +6,7 @@
 body {
     background: rgb(2, 0, 36);
     background: linear-gradient(169deg, rgba(2, 0, 36, 1) 0%, rgba(243, 187, 254, 1) 0%, rgba(170, 230, 255, 1) 100%);
+    min-height: 100vh;
 }
 
 li {
@@ -161,3 +162,4 @@ button {
     font-size: 14px;
     font-weight: bold;
 }
+
