@@ -9,13 +9,25 @@
 </head>
 
 <style>
-    h1, h2, .center, h3 {
+    h1, h2, .center, h3, .information {
         text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        font-family: sans-serif;
     }
+
+    .information p {
+        border-radius: 25px;
+        background: plum;
+        padding: 20px;
+        width: 200px;
+        height: 25px;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
 </style>
 
 <body>
@@ -25,6 +37,14 @@
     </div>
     <h2> Personal Information </h2>
     <h3> Name of Pet </h3>
+
+    <div class="information">
+        <p> Age </p>
+        <p> Breed </p>
+        <p> Weight </p>
+        <p> Special Needs </p>
+    </div>
+    
 
 </body>
 </html>
