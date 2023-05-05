@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Display Pet Information</title>
+    <title>Pet Health App</title>
 </head>
 
 <style>
-    h1, h2, .center, h3, .information {
+    h1, h2, .petImage, h3 {
         text-align: center;
         display: block;
         margin-left: auto;
@@ -17,33 +17,45 @@
         width: 50%;
         font-family: sans-serif;
     }
+    .information {
+        text-align: center;
+        display: block;
+        margin-right: auto;
+        width: 50%;
+        font-family: sans-serif;
+    }
     .information p {
         border-radius: 25px;
-        background: plum;
+        background: rgb(247, 241, 247);
         padding: 20px;
         width: 200px;
         height: 25px;
         justify-content: space-between;
         margin: 10px;
     }
+    .petImage {
+        align-items: center;
+        width: 450px;
+        height: 300px;
+    }
+
 </style>
 
 <body>
-    <h1> Profile </h1> 
-    <div class="petimage">
-        <img src="images/PetPal.png" alt="Insert Pet Picture Here" width="200px" height="200px" class="center">
+    <div class="grid-container">
+        <h1> Profile </h1> 
+        <div class="petImage">
+            <img src="images/PetPal.png" alt="Insert Pet Picture Here" style="max-width: 100%">
+        </div>
+        <h2> Name of Pet </h2>
+        <h3> Personal Information </h3>
+        <div class="information">
+            <p><b>Age</b></p>
+            <p><b>Pet Type</b></p>
+            <p><b>Breed</b></p>
+            <p><b>Weight</b></p>
+            <p><b>Special Needs</b></p>
+        </div>
     </div>
-    <h2> Name of Pet </h2>
-    <h3> Personal Information </h3>
-
-    <div class="information">
-        <p><b>Age</b></p>
-        <p><b>Pet Type</b></p>
-        <p><b>Breed</b></p>
-        <p><b>Weight</b></p>
-        <p><b>Special Needs</b></p>
-    </div>
-    
-
 </body>
 </html>
