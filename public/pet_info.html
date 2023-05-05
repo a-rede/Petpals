@@ -9,7 +9,13 @@
 </head>
 
 <style>
-    h1, h2, .petImage, h3 {
+    .grid-container {
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    h1, h2, .petImage {
         text-align: center;
         display: block;
         margin-left: auto;
@@ -36,8 +42,9 @@
     .petImage {
         align-items: center;
         width: 450px;
-        height: 300px;
+        height: 275px;
     }
+
 
 </style>
 
@@ -47,8 +54,13 @@
         <div class="petImage">
             <img src="images/PetPal.png" alt="Insert Pet Picture Here" style="max-width: 100%">
         </div>
-        <h2> Name of Pet </h2>
-        <h3> Personal Information </h3>
+        <h2>Stella</h2>
+        <div class="btnAll">
+            <button class="btnEditInfo">Edit</button>
+            <button class="btnMedInfo">Medical Records</button>
+            <button class="btnNoteInfo">Notes</button>
+        </div>
+        <!-- <h3> Personal Information </h3> -->
         <div class="information">
             <p><b>Age</b></p>
             <p><b>Pet Type</b></p>
