@@ -252,3 +252,7 @@ fieldset {
     font-style: italic;
     margin-bottom: 10px;
 }
+
+.PersonalInfo h2 {
+    color: black;
+}
