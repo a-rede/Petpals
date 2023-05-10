@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const session = require('express-session');
 const ejsLayouts = require('express-ejs-layouts');
-const passport = require('passport');
 const petpalController = require('./controller/petpal-controller');
+const passport = require("./middleware/passport");
 const path = require("path");
 const PORT = process.env.PORT || 8000;
 
@@ -28,8 +28,17 @@ app.set('view engine', 'ejs');
 
 // Routes start here
 app.get('/', petpalController.index);
-app.get('/login', petpalController.login);
+app.get('/signin', petpalController.signin);
+app.post('/signin',
+    passport.authenticate("local", {
+        successRedirect: "/appt",
+        failureRedirect: "/signin",
+    })
+);
 app.get('/signup', petpalController.signup);
+app.get('/appt', petpalController.appointments);
+// google
+app.get('/auth/google', passport.authenticate('google', { scope: ['email', 'profile'] }));
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
