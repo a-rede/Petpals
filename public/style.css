@@ -256,3 +256,7 @@ fieldset {
 .PersonalInfo h2 {
     color: black;
 }
+
+.grid-container p {
+    color: black;
+}
