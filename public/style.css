@@ -18,8 +18,39 @@ a {
     text-decoration: none;
 }
 
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+    transform: translateY(-4px);
+}
+
 button {
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transform: translateY(-4px);
+    transition: 0.4s ease-in-out;
+}
+
+button:active {
+    outline: none;
+    transform: translateY(1px);
 }
 
 .grid-container {
@@ -27,6 +58,17 @@ button {
     align-content: center;
     justify-content: space-around;
     justify-items: center;
+}
+
+.logo {
+    width: 700px;
+    height: 600px;
+    margin-left: 2.3rem;
+}
+
+.logo-header {
+    height: 430px;
+    width: 100%;
 }
 
 .loginbox {
@@ -243,7 +285,7 @@ button {
 }
 
 .appointment-header,
-fieldset {
+form {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     color: black;
@@ -253,10 +295,63 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.PersonalInfo h2 {
-    color: black;
+#appointment-description {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ededed;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
 }
 
-.grid-container p {
-    color: black;
+.upload {
+    width: 100%;
+    text-align: center;
+}
+
+.upload-img {
+    width: 50px;
+    height: 50px;
+}
+
+.appointments-container {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 400px;
+    /* adjust this value to have more or less empty space */
+    margin-bottom: 20px;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    gap: 10px;
+    /* adjust this value to change the space between appointments */
+}
+
+.appointment-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button.edit-btn,
+button.delete-btn {
+    width: 49%;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+button.edit-btn,
+button.delete-btn {
+    background-color: royalblue;
 }
