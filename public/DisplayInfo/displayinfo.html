@@ -10,9 +10,14 @@
   <body>
     <div class="grid-container">
         <header>
-          <div class="LogoAcc" style="height: 300px">
-            <p href="../UpdateInfo.html">Edit</p>
-            <img src="images/PetPal.png" alt="Insert Pet Picture Here" width="200px" height="200px" class="center">
+          <div class="LogoAcc" style="height: 230px">
+            <link href="UpdateInfo.html">Edit</link>
+            <div class="uploadinfo">
+              <input type="file" accept="image/*" name="img" id="file" style="display: none">
+              <label for="file">
+                  <img src="../images/upload.png" class="upload-img">
+              </label>
+          </div>
           </div>
         </header>
   
@@ -21,23 +26,24 @@
             <form class="PersonalInfo">
                 <hr style="border : outset 2px rgb(10, 10, 10)" >
               <h2>Personal Information</h2>
-              <div class="information">
-                <p><b>Age</b></p>
-                <p><b>Pet Type</b></p>
-                <p><b>Breed</b></p>
-                <p><b>Weight</b></p>
-                <p><b>Special Needs</b></p>
-            </div>
-
+              <div class="textbox">
+                Age <input type="text" style="
+                margin-bottom: 0px;"><br>
+                Pet Type <input type="text" style="
+                margin-bottom: 0px;"><br>
+                Breed <input type="text" style="
+                margin-bottom: 0px;"><br>
+                Weight <input type="text" style="
+                margin-bottom: 0px;"><br>
+                Special Needs <input type="text" style="
+                margin-bottom: 0px;"><br>
+              </div>
               <i class="fa-regular fa-envelope"></i>
 
                 <hr style="border : outset 2px rgb(10, 10, 10)" >
               <h2>Medical Records</h2>
               <h2>Notes</h2>
-              <ul>
-                <li><a href="#">Terms of service and policy</a></li>
-                <li><a href="WelcomeBk.html">Sign in </a></li>
-              </ul>
+
             </form>
           </div>
         </main>

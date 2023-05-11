@@ -355,7 +355,10 @@ button.edit-btn,
 button.delete-btn {
     background-color: royalblue;
 }
-h1, h2, .petImage {
+
+h1,
+h2,
+.petImage {
     text-align: center;
     display: block;
     margin-left: auto;
@@ -363,9 +366,11 @@ h1, h2, .petImage {
     width: 50%;
     font-family: sans-serif;
 }
+
 h2 {
     font-size: 50px;
 }
+
 .btnEditInfo {
     color: rgb(247, 241, 247);
     background-color: rgb(206, 56, 103);
@@ -375,6 +380,7 @@ h2 {
     justify-content: space-between;
     margin: 10px;
 }
+
 .btnMedInfo {
     color: rgb(247, 241, 247);
     background-color: rgb(44, 66, 191);
@@ -385,6 +391,7 @@ h2 {
     justify-content: space-between;
     margin: 10px;
 }
+
 .btnNoteInfo {
     color: rgb(247, 241, 247);
     background-color: rgba(127, 67, 134, 0.826);
@@ -402,6 +409,7 @@ h2 {
     width: 50%;
     font-family: sans-serif;
 }
+
 .information p {
     border-radius: 25px;
     background: rgb(247, 241, 247);
@@ -411,8 +419,38 @@ h2 {
     justify-content: space-between;
     margin: 10px;
 }
+
 .petImage {
     align-items: center;
     width: 450px;
     height: 275px;
+}
+
+.uploadinfo {
+    width: 100%;
+    text-align: center;
+}
+
+.uploadinfo img {
+    width: 150px;
+    height: 150px;
+}
+
+.PersonalInfo .textbox {
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textbox input {
+    margin-left: auto;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    align-content: space-around;
+    margin-top: 10px;
 }
