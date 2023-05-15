@@ -454,3 +454,39 @@ h2 {
     align-content: space-around;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .appointment-logo {
+        text-align: center;
+        justify-content: center;
+        margin-top: 2em;
+        min-width: 300px; 
+    }
+
+    .appointment-logo img {
+        width: 100%; 
+    }
+
+    .loginbox {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .appointment-header {
+        font-size: 1.25em;
+        margin-top: 2em;
+        text-align: center;    
+    }
+
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label, input {
+        margin: 15px 0;
+    }
+
+   
+}
